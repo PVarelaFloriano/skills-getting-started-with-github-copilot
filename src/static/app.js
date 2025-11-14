@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const participantsList = details.participants.length > 0 
           ? `<ul class="participants-list">${details.participants.map(email => `<li><span class="participant-email">${email}</span><button class="delete-participant" onclick="deleteParticipant('${name}', '${email}')">×</button></li>`).join('')}</ul>`
-          : '<p class="no-participants">Nenhum participante ainda</p>';
+          : '<p class="no-participants">No participants yet</p>';
 
         activityCard.innerHTML = `
           <h4>${name}</h4>
